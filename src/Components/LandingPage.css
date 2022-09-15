@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+#customOrder {
+  height: 40px;
+  width: 275px;
+  margin-right: 20px;
+}
+
+#Inventory {
+  height: 40px;
+  width: 275px;
+}
+
+.Btns {
+  padding-top: 20%;
+}
+#downArrow {
+  text-align: center;
+  padding-top: 4%;
+}
+.secondaryHeader {
+  padding-top: 7%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+#CarTitle {
+  padding-top: 10;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* The image used
+  /* min-height: 715px; */
+  /* background-image: url("./assets/M3-Homepage-D.jpg");
+  background-image: url("./assets/model-y_R1@2.jpg"); 
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  /* Needed to position the navbar */
+  /* position: relative;  */
+}
+.img {
+  /* Full height */
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  margin-top: -65px;
+  padding-left: 30%;
+}
+
+.topnav h5 {
+  float: left;
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 25px;
+  text-decoration: none;
+
+  font-size: 17px;
+}
+
+.App-logo {
+  width: 8%;
+  margin: 1em;
+  padding-top: 0.5%;
+  padding-left: 2.5%;
+}
+
+.App-header {
+  position: sticky;
+  top: -3px;
+}
+/* <img src="/assets/M3-Homepage-D.jpg" /> */
