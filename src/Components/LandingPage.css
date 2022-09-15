@@ -87,3 +87,13 @@ body {
   top: -3px;
 }
 /* <img src="/assets/M3-Homepage-D.jpg" /> */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.section {
+  scroll-snap-align: center;
+  height: 100vh;
+  min-height: 36rem;
+}
