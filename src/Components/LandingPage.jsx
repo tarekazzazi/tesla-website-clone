@@ -14,7 +14,7 @@ function LandingPage() {
   return (
     <div className="App">
       <div className="scroll-container">
-        <div className="section">
+        <div className="section App-header">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <nav className="topnav">
