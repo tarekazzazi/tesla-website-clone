@@ -1,45 +1,40 @@
 import "./LandingPage.css";
 import logo from "../../assets/tesla.svg";
 import { useState } from "react";
+
 function LandingPage() {
   const [car, setCarType] = useState("");
-  const model = [
-    "Model 3",
-    "Model Y",
-    "Model S",
-    "Model X",
-    "Solar Panels",
-    "Solar Roof",
-  ];
+  const [txtColor, setTextColor] = useState("");
+
   const handleScroll = (event) => {
+    let style = { color: "black" };
     let type;
     let x = event.currentTarget.scrollTop;
-    console.log(x);
+
+    // Checks scrollTop if within the range it will set the local state to that type
     if (x > 0 && x < 1000) {
       type = "Model 3";
-      console.log("hello");
     } else if (x > 1000 && x < 2200) {
       type = "Model Y";
-      console.log("WHOA");
     } else if (x > 2200 && x < 3000) {
       type = "Model S";
-      console.log("No way");
     } else if (x > 3000 && x < 3900) {
       type = "Model X";
-      console.log("NOPE");
     } else if (x > 3900 && x < 4500) {
       type = "Solar Panels";
-    } else {
+    } else if (x > 4500) {
       type = "Solar Roof";
+      style = { color: "white" };
     }
 
-    return setCarType(type);
+    return setCarType(type), setTextColor(style);
   };
   console.log(car);
+  console.log(txtColor);
   return (
     <div className="App">
       <div className="scroll-container" onScroll={handleScroll}>
-        <div className=" App-header">
+        <div className=" App-header" style={{ color: txtColor.color }}>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <nav className="topnav">
