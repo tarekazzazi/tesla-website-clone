@@ -3,14 +3,26 @@ body {
 }
 
 #customOrder {
+  cursor: pointer;
   height: 40px;
   width: 275px;
   margin-right: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(57 60 65);
+  border-color: rgb(57 60 65);
+  border-style: solid;
+  border-radius: 5px;
 }
 
 #Inventory {
+  cursor: pointer;
   height: 40px;
   width: 275px;
+  color: rgb(57 60 65);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 5px;
 }
 
 .Btns {
@@ -37,18 +49,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* The image used
-  /* min-height: 715px; */
-  /* background-image: url("./assets/M3-Homepage-D.jpg");
-  background-image: url("./assets/model-y_R1@2.jpg"); 
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-  /* Needed to position the navbar */
-  /* position: relative;  */
 }
 .img {
   /* Full height */
@@ -86,7 +86,6 @@ body {
   position: sticky;
   top: -3px;
 }
-/* <img src="/assets/M3-Homepage-D.jpg" /> */
 .scroll-container {
   height: 100vh;
   overflow-y: scroll;
@@ -96,4 +95,9 @@ body {
   scroll-snap-align: center;
   height: 118vh;
   min-height: 36rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
 }

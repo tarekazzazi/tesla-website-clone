@@ -1,7 +1,7 @@
 import "./LandingPage.css";
 import blackLogo from "../../assets/tesla.svg";
 import whiteLogo from "../../assets/teslaWhite.svg";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function LandingPage() {
@@ -10,6 +10,9 @@ function LandingPage() {
   const [logo, setLogo] = useState("one");
 
   const handleScroll = (event) => {
+    // style sets all text in App-header to black
+    // choice changes logo which is being used to one with a fill of black
+    // type displays the title of the header
     let style = { color: "black" };
     let choice = blackLogo;
     let type;
@@ -31,11 +34,9 @@ function LandingPage() {
       style = { color: "white" };
       choice = whiteLogo;
     }
-
     return setCarType(type), setTextColor(style), setLogo(choice);
   };
-  console.log(car);
-  console.log(txtColor);
+
   return (
     <div className="App">
       <div className="scroll-container" onScroll={handleScroll}>
@@ -43,12 +44,24 @@ function LandingPage() {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <nav className="topnav">
-              <h5>Model S</h5>
-              <h5>Model 3</h5>
-              <h5>Model X</h5>
-              <h5>Model Y</h5>
-              <h5>Solar Roof</h5>
-              <h5>Solar Panels</h5>
+              <Link to="/models" style={{ color: txtColor.color }}>
+                <h5>Model S</h5>
+              </Link>
+              <Link to="/model3" style={{ color: txtColor.color }}>
+                <h5>Model 3</h5>
+              </Link>
+              <Link to="/modelx" style={{ color: txtColor.color }}>
+                <h5>Model X</h5>
+              </Link>
+              <Link to="/modely" style={{ color: txtColor.color }}>
+                <h5>Model Y</h5>
+              </Link>
+              <Link to="/solarroof" style={{ color: txtColor.color }}>
+                <h5>Solar Roof</h5>
+              </Link>
+              <Link to="/solarpanel" style={{ color: txtColor.color }}>
+                <h5>Solar Panels</h5>
+              </Link>
             </nav>
           </header>
           <br />
@@ -56,7 +69,6 @@ function LandingPage() {
           <br />
           <div className="secondaryHeader App-header">
             <h1 id="CarTitle">{car}</h1>
-
             <p>
               Order online for{" "}
               <a href="https://www.w3schools.com">Touchless Delivery</a>
