@@ -16,16 +16,21 @@ function LandingPage() {
     let x = event.currentTarget.scrollTop;
     console.log(x);
     if (x > 0 && x < 1000) {
-      type = "telsa model 3";
+      type = "Model 3";
       console.log("hello");
     } else if (x > 1000 && x < 2200) {
       type = "Model Y";
       console.log("WHOA");
-    } else if (x > 2200 && x < 4000) {
+    } else if (x > 2200 && x < 3000) {
       type = "Model S";
       console.log("No way");
-    } else {
+    } else if (x > 3000 && x < 3900) {
+      type = "Model X";
       console.log("NOPE");
+    } else if (x > 3900 && x < 4500) {
+      type = "Solar Panels";
+    } else {
+      type = "Solar Roof";
     }
 
     return setCarType(type);
