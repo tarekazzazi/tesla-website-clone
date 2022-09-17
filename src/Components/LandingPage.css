@@ -94,6 +94,6 @@ body {
 }
 .section {
   scroll-snap-align: center;
-  height: 100vh;
+  height: 118vh;
   min-height: 36rem;
 }

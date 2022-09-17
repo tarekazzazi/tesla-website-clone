@@ -1,13 +1,13 @@
-.bg-img2 {
-  /* The image used */
-  background-image: url("./assets/model-y_R1@2.jpg");
-  min-height: 715px;
+/* .bg-img2 { */
+/* The image used */
+/* background-image: url("./assets/model-y_R1@2.jpg");
+  min-height: 715px; */
 
-  /* Center and scale the image nicely */
-  background-position: center;
+/* Center and scale the image nicely */
+/* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
-  /* Needed to position the navbar */
-  position: relative;
-}
+/* Needed to position the navbar */
+/* position: relative; */
+/* } */
