@@ -1,7 +1,8 @@
 import "./LandingPage.css";
 import logo from "../../assets/tesla.svg";
-
+import { useState } from "react";
 function LandingPage() {
+  const [car, setCarType] = useState("");
   const model = [
     "Model 3",
     "Model Y",
@@ -10,29 +11,26 @@ function LandingPage() {
     "Solar Panels",
     "Solar Roof",
   ];
-
   const handleScroll = (event) => {
-    // console.log("scrollTop: ", event.currentTarget.scrollTop);
     let type;
     let x = event.currentTarget.scrollTop;
     console.log(x);
-    // console.log("Window Scroll Y", window.scrollY);
-    if (x < 1000) {
+    if (x > 0 && x < 1000) {
       type = "telsa model 3";
       console.log("hello");
-    } else if (x < 1360) {
+    } else if (x > 1000 && x < 2200) {
+      type = "Model Y";
       console.log("WHOA");
-    } else if (x < 2200) {
+    } else if (x > 2200 && x < 4000) {
+      type = "Model S";
       console.log("No way");
     } else {
       console.log("NOPE");
     }
-    // console.log("type is this", type);
-    return;
+
+    return setCarType(type);
   };
-
-  // console.log("type is this", type);
-
+  console.log(car);
   return (
     <div className="App">
       <div className="scroll-container" onScroll={handleScroll}>
@@ -52,7 +50,7 @@ function LandingPage() {
           <br />
           <br />
           <div className="secondaryHeader App-header">
-            <h1 id="CarTitle">{}</h1>
+            <h1 id="CarTitle">{car}</h1>
 
             <p>
               Order online for{" "}
