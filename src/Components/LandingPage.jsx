@@ -1,13 +1,17 @@
 import "./LandingPage.css";
-import logo from "../../assets/tesla.svg";
+import blackLogo from "../../assets/tesla.svg";
+import whiteLogo from "../../assets/teslaWhite.svg";
+
 import { useState } from "react";
 
 function LandingPage() {
   const [car, setCarType] = useState("");
   const [txtColor, setTextColor] = useState("");
+  const [logo, setLogo] = useState("one");
 
   const handleScroll = (event) => {
     let style = { color: "black" };
+    let choice = blackLogo;
     let type;
     let x = event.currentTarget.scrollTop;
 
@@ -25,9 +29,10 @@ function LandingPage() {
     } else if (x > 4500) {
       type = "Solar Roof";
       style = { color: "white" };
+      choice = whiteLogo;
     }
 
-    return setCarType(type), setTextColor(style);
+    return setCarType(type), setTextColor(style), setLogo(choice);
   };
   console.log(car);
   console.log(txtColor);
