@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 function navBar({ navColor }) {
-  console.log(navColor.color);
+  console.log(navColor);
 
   return (
     <nav className="topnav">

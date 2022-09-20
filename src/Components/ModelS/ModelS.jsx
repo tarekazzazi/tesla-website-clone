@@ -1,8 +1,13 @@
 import "./ModelS.css";
+import Nav from "../ReusableComponents/Nav";
 function models() {
   return (
     <>
       <div className="detail-scroll-container">
+        <div className="App-header">
+          <Nav />
+        </div>
+
         <div className="App-header App-footer">
           <h2 className="bottom-animation">396 mi</h2>
           <h2 className="bottom-animation">1.99 s</h2>
