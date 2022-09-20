@@ -1,9 +1,8 @@
 import "./LandingPage.css";
-import blackLogo from "../../assets/tesla.svg";
-import whiteLogo from "../../assets/teslaWhite.svg";
-import { Link } from "react-router-dom";
+import blackLogo from "../../../assets/tesla.svg";
+import whiteLogo from "../../../assets/teslaWhite.svg";
 import { useState } from "react";
-
+import Nav from "../ReusableComponents/Nav";
 function LandingPage() {
   const [car, setCarType] = useState("");
   const [txtColor, setTextColor] = useState("");
@@ -43,26 +42,8 @@ function LandingPage() {
         <div className=" App-header" style={{ color: txtColor.color }}>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <nav className="topnav">
-              <Link to="/models" style={{ color: txtColor.color }}>
-                <h5>Model S</h5>
-              </Link>
-              <Link to="/model3" style={{ color: txtColor.color }}>
-                <h5>Model 3</h5>
-              </Link>
-              <Link to="/modelx" style={{ color: txtColor.color }}>
-                <h5>Model X</h5>
-              </Link>
-              <Link to="/modely" style={{ color: txtColor.color }}>
-                <h5>Model Y</h5>
-              </Link>
-              <Link to="/solarroof" style={{ color: txtColor.color }}>
-                <h5>Solar Roof</h5>
-              </Link>
-              <Link to="/solarpanel" style={{ color: txtColor.color }}>
-                <h5>Solar Panels</h5>
-              </Link>
-            </nav>
+            <Nav navColor={{ color: txtColor.color }} />
+            {/*  */}
           </header>
           <br />
           <br />
