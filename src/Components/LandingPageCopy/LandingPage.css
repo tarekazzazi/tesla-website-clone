@@ -86,14 +86,10 @@ body {
   position: sticky;
   top: -3px;
 }
-#scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
+
 .section {
   scroll-snap-align: center;
-  height: 118vh;
+  height: 128vh;
   min-height: 36rem;
 }
 

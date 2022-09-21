@@ -1,11 +1,13 @@
 import "./ModelS.css";
-import Nav from "../ReusableComponents/Nav";
+import LandingPage from "../LandingPageCopy/LandingPage";
 function models() {
   return (
     <>
+      {/* <LandingPage /> */}
       <div className="detail-scroll-container">
-        <div className="App-header">
-          <Nav />
+        {/* change classname to a different one prevents link from working idk why */}
+        <div className="App-header" seamless="seamless" scrolling="no">
+          <LandingPage />
         </div>
 
         <div className="App-header App-footer">
@@ -16,12 +18,12 @@ function models() {
 
           <h2 className="bottom-animation">Order Now</h2>
         </div>
-        <img
+        {/* <img
           className="detail-section"
           src="./assets/ms-main-hero-desktop.jpg"
           height={1000}
           width={1440}
-        />
+        /> */}
       </div>
     </>
   );

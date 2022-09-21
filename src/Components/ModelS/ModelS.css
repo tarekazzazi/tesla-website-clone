@@ -4,9 +4,9 @@
   scroll-snap-type: y mandatory;
 }
 .detail-section {
-  margin-top: -22%;
-  padding-bottom: 8%;
-  margin-bottom: 10%;
+  margin-top: 22%;
+  padding-top: 30%;
+  margin-bottom: 0%;
   scroll-snap-align: center;
   height: 140vh;
   min-height: 36rem;

@@ -1,5 +1,10 @@
+import Nav from "../LandingPageCopy/LandingPage";
 function model3() {
-  return <h1> Model 3</h1>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }
 
 export default model3;
