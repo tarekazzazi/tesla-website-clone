@@ -1,39 +1,62 @@
-/* body{
-      margin: 0; 
-  } */
-
-/* .bg-img{ */
-      /* The image used */
-  /* background-image: url("./assets/M3-Homepage-D.jpg");
-  min-height: 380px; */
-
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   */
-  /* Needed to position the navbar */
-  /* position: relative;
+/* CSS for car Models */
+.detail-scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
-.topnav{
-   margin-top: -65px;
-   padding-left: 30%;
-} */
+.detail-section {
+  margin-top: 22%;
+  padding-top: 30%;
+  margin-bottom: 0%;
+  scroll-snap-align: center;
+  height: 140vh;
+  min-height: 36rem;
+}
+.bottom-animation {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+}
+.bottom-animation:nth-child(1) {
+  animation-delay: 0s;
+}
+.bottom-animation:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bottom-animation:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bottom-animation:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bottom-animation:nth-child(5) {
+  animation-delay: 1s;
+}
 
-/* .topnav h5{
+@keyframes example {
+  0% {
+    opacity: 25%;
+    left: 0px;
+    top: -20px;
+  }
+  20% {
+    opacity: 100%;
+    left: 0px;
+    top: 0px;
+  }
+}
+.App-footer {
+  margin-top: -15%;
+  margin-bottom: 0%;
+  float: right;
+  padding-right: 25%;
+}
+.Nav-header {
+  margin-top: -10;
+}
+
+h2 {
+  color: aliceblue;
   float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none; */
-
-  /* font-size: 17px; */
- /* } */
-
-/* .App-logo{
-      width: 8%;
-      margin: 1em;
-      padding-top: 0.5%;  
-      padding-left: 2.5%;  
-  } */
-
-  /* <img src="/assets/M3-Homepage-D.jpg" /> */
+  padding: 1em;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/tesla.svg";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import ModelS from "./Components/ModelS/ModelS";
 import Model3 from "./Components/Model3/Model3";

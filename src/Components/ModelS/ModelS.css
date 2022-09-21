@@ -45,15 +45,21 @@
   }
 }
 .App-footer {
-  padding-top: 42%;
-  padding-right: 20%;
+  /* padding-right: 20%; */
+  margin-top: -15%;
+  margin-bottom: 0%;
   float: right;
-  margin: 1em;
+  padding-right: 25%;
+}
+.Nav-header {
+  margin-top: -10;
 }
 
 h2 {
   color: aliceblue;
   float: left;
-  margin: 1em;
-  padding-inline-start: 50px;
+  padding: 1em;
+
+  /* padding-inline-start: 50px; */
+  /* padding-bottom: ; */
 }

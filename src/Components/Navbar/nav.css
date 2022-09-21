@@ -26,20 +26,18 @@ body {
 }
 
 .Btns {
-  padding-top: 20%;
+  /* padding-top: 20%; */
 }
 #downArrow {
   text-align: center;
-  padding-top: 4%;
+  /* padding-top: 4%; */
 }
-.secondaryHeader {
+.secondaryHeader-nav {
   padding-top: 7%;
-  padding-bottom: 1%;
   text-align: center;
 }
-#CarTitle {
-  padding-top: 10;
-}
+/* #CarTitle {
+} */
 
 .bg-image {
   /* Full height */
@@ -68,7 +66,7 @@ body {
 .topnav h5 {
   float: left;
   text-align: center;
-  padding-top: 5px;
+  /* padding-top: 5px; */
   padding-left: 25px;
   text-decoration: none;
 
@@ -78,16 +76,16 @@ body {
 .App-logo {
   width: 8%;
   margin: 1em;
-  padding-top: 0.5%;
+  /* padding-top: 0.5%; */
   padding-left: 2.5%;
 }
 
-.App-header {
+.App-header-nav {
   position: sticky;
   top: -3px;
 }
 
-.section {
+.section-nav {
   scroll-snap-align: center;
   height: 128vh;
   min-height: 36rem;
