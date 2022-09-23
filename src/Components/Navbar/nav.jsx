@@ -2,23 +2,24 @@ import "./nav.css";
 import blackLogo from "../../../assets/tesla.svg";
 import whiteLogo from "../../../assets/teslaWhite.svg";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function LandingPage() {
+  // stores all results from onLoad function in local state
   const [car, setCarType] = useState("");
   const [txtColor, setTextColor] = useState("");
   const [logo, setLogo] = useState("");
   const [link, setLink] = useState("");
+
   useEffect(() => {
     onLoad();
   }, []);
-
+  // Grabs the current pathname
   const usePathname = () => {
     const location = useLocation();
     return location.pathname;
   };
-
+  // Assigns path to pathname variable
   const pathname = usePathname();
   console.log(pathname);
 
@@ -28,6 +29,7 @@ function LandingPage() {
     let type;
     let img;
 
+    // Displays correct image and text depending on the pathname
     switch (pathname) {
       case "/models":
         style = { color: "black" };
@@ -70,14 +72,11 @@ function LandingPage() {
       <div className="scroll-container">
         <div className=" App-header-nav" style={{ txtColor }}>
           <header className="App-header-nav">
-            <img src={logo} className="App-logo" alt="logo" />
+            <Link to="/">
+              <img src={logo} className="App-logo" alt="logo" />
+            </Link>
             <nav className="topnav">
-              <Link
-                to="/models"
-                style={{
-                  color: txtColor.color,
-                }}
-              >
+              <Link to="/models" style={{ color: txtColor.color }}>
                 <h5>Model S</h5>
               </Link>
               <Link to="/model3" style={{ color: txtColor.color }}>

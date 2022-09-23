@@ -4,8 +4,6 @@ import whiteLogo from "../../../assets/teslaWhite.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import Nav from "../ReusableComponents/Nav";
-
 function LandingPage() {
   const [car, setCarType] = useState("");
   const [txtColor, setTextColor] = useState("");
@@ -94,7 +92,6 @@ function LandingPage() {
             </div>
           </div>
         </div>
-
         <div className="section" id="0">
           <img src="/assets/M3-Homepage-D.jpg" className="img" />
         </div>
