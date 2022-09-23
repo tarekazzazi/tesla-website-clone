@@ -7,10 +7,9 @@ function model3() {
         <div className="Nav-header" seamless="seamless" scrolling="no">
           <Nav />
           <div className="App-footer">
-            <h2 className="bottom-animation">396 mi</h2>
-            <h2 className="bottom-animation">1.99 s</h2>
-            <h2 className="bottom-animation">200 mph</h2>
-            <h2 className="bottom-animation">1,020 hp</h2>
+            <h2 className="bottom-animation">3.1 s</h2>
+            <h2 className="bottom-animation">358 mi</h2>
+            <h2 className="bottom-animation">AWD</h2>
             <h2 className="bottom-animation">Order Now</h2>
           </div>
         </div>

@@ -58,5 +58,12 @@
 h2 {
   color: aliceblue;
   float: left;
-  padding: 1em;
+}
+
+h6 {
+  color: aliceblue;
+  float: left;
+}
+.container {
+  margin-left: 500px;
 }
