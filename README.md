@@ -31,7 +31,7 @@ On the items pages there should a side bar showing the number of snaps and takin
 
 ### Ports 
 
-Project avalible on port 1337
+Project avalible on localhost:1337
 
 ## Where to find everything
 
